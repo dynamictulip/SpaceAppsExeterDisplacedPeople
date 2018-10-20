@@ -1,7 +1,3 @@
-<select (selected)="emitSelected()">
-  <option>Dadaab</option>
-  <option>Kakuma</option>
-  <option>Bidi Bidi</option>
-  <option>Zaatari</option>
-  <option>Kutupalong</option>
+<select *ngIf="camps" (change)="emitSelected($event.target.value)">
+  <option *ngFor="let camp of camps" [value]="camp.name">{{camp.name}}</option>
 </select>

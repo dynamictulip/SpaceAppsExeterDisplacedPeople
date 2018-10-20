@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Camp} from '../../models/camp';
 
 @Component({
   selector: 'app-selector',
@@ -6,15 +7,16 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./camp-selector.component.css']
 })
 export class CampSelectorComponent implements OnInit {
-
-  @Output() valueChanged = new EventEmitter();
+  @Input() camps: Camp;
+  @Output() selected = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  emitSelected(event$) {
-    this.valueChanged.emit(event$);
+  emitSelected($event) {
+    console.log('Selectro emit');
+    this.selected.emit($event);
   }
 }

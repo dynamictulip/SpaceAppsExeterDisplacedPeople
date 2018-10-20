@@ -6,7 +6,7 @@ import {City} from '../../models/city';
   providedIn: 'root'
 })
 export class CampDataService {
-  camp: Camp[] = new Camp[10]();
+  camps: Camp[] = new Array;
 
   constructor(){
     const plymouth: City = new City('Plymouth', 234982);
@@ -21,14 +21,18 @@ export class CampDataService {
     const zaatarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/db9bdc4747801a3d4a595e29aab253b3/image.png';
     const kutupahlongImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/7cc718bdb3d8a1d839d91a674c9067c8/image.png';
 
-    this.camp.push(new Camp('Dadaab', 253000, '1991', 'Somalia', dadaabImage, plymouth));
-    this.camp.push(new Camp('Kakuma', 190000, '1991', 'Somalia', kakumaImage, bournmouth));
-    this.camp.push(new Camp('Bidibidi', 272000, '1991', 'Somalia', bidibidiImage, bradford));
-    this.camp.push(new Camp('Zaatar', 79000, '1991', 'Somalia', zaatarImage, weston));
-    this.camp.push(new Camp('Kutupahlong', 970000, '1991', 'Somalia', kutupahlongImage, birmingham));
+    this.camps.push(new Camp('Dadaab', 253000, '1991', 'Somalia', dadaabImage, plymouth));
+    this.camps.push(new Camp('Kakuma', 190000, '1991', 'Somalia', kakumaImage, bournmouth));
+    this.camps.push(new Camp('Bidibidi', 272000, '1991', 'Somalia', bidibidiImage, bradford));
+    this.camps.push(new Camp('Zaatar', 79000, '1991', 'Somalia', zaatarImage, weston));
+    this.camps.push(new Camp('Kutupahlong', 970000, '1991', 'Somalia', kutupahlongImage, birmingham));
+  }
+
+  getCamps(): Camp[] {
+    return this.camps;
   }
 
   getCamp(name: String): Camp {
-    return this.camp.find((item: Camp) => item.name === name);
+    return this.camps.find((item: Camp) => item.name === name);
   }
 }
