@@ -1,9 +1,17 @@
 export class City {
-  private name: String;
-  private population: number;
+  private _name: String;
+  private _population: number;
 
   constructor(name: String, population: number) {
-    this.name = name;
-    this.population = population;
+    this._name = name;
+    this._population = population;
+  }
+
+  get name(): String {
+    return this._name;
+  }
+
+  get population(): number {
+    return this._population;
   }
 }

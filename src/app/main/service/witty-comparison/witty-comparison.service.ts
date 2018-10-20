@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class WittyComparisonService {
-  const apiUrl = 'http://populationdensitycomparator.azurewebsites.net/api/PopulationDensityHttpTrigger?density=';
+  apiUrl = 'http://populationdensitycomparator.azurewebsites.net/api/PopulationDensityHttpTrigger?density=';
 
   constructor(private http: HttpClient) { }
 
