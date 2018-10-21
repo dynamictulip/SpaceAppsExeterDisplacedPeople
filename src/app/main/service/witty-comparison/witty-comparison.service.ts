@@ -6,7 +6,7 @@ import {Wibject} from '../../models/wibject';
   providedIn: 'root'
 })
 export class WittyComparisonService {
-  apiUrl = 'http://populationdensitycomparator.azurewebsites.net/api/PopulationDensityHttpTrigger?density=';
+  apiUrl = 'https://populationdensitycomparator.azurewebsites.net/api/PopulationDensityHttpTrigger?density=';
 
   constructor(private http: HttpClient) { }
 

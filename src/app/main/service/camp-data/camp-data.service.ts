@@ -15,17 +15,17 @@ export class CampDataService {
     const zaatarBackgroundImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/db9bdc4747801a3d4a595e29aab253b3/image.png';
     const kutupahlongBackgroundImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/7cc718bdb3d8a1d839d91a674c9067c8/image.png';
 
-    const dadaabRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/219898850fdafe338e94288d9a9284a5/image.png';
-    const kakumaRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/e81d44c37252371665c8f2a82cfd7abb/image.png';
-    const bidibidiRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/bcb453600f62ab1d270e7d2740be461f/image.png';
-    const zaatarRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/db9bdc4747801a3d4a595e29aab253b3/image.png';
-    const kutupahlongRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/7cc718bdb3d8a1d839d91a674c9067c8/image.png';
+    const dadaabRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const kakumaRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const bidibidiRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const zaatarRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const kutupahlongRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
 
-    const plymouthRadarImage = '';
-    const bournemouthRadarImage = '';
-    const bradfordRadarImage = '';
-    const westonRadarImage = '';
-    const birminghamRadarImage = '';
+    const plymouthRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const bournemouthRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const bradfordRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const westonRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const birminghamRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
 
     const plymouth: City = new City('Plymouth', 234982, plymouthRadarImage);
     const bournemouth: City = new City('Plymouth', 234982, bournemouthRadarImage);

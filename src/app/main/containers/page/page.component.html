@@ -14,6 +14,9 @@
   <div class="righthand">
     <app-images
       [image1Url]="selectedCamp?.radarImageUrl"
-      [image2Url]="selectedCamp?.equivalentCity?.radarImageUrl"></app-images>
+      [image1Caption]="selectedCamp?.name"
+      [image2Url]="selectedCamp?.equivalentCity?.radarImageUrl"
+      [image2Caption]="selectedCamp?.equivalentCity?.name"
+    ></app-images>
   </div>
 </div>
