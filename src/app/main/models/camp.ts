@@ -3,15 +3,17 @@ import {City} from './city';
 export class Camp {
   private _name: String;
   private _population: number;
+  private _populationDensity: number;
   private _startDate: string;
   private _fleeing: string;
   private _backgroundImageUrl: string;
   private _radarImageUrl: string;
   private _equivalentCity: City;
 
-  constructor(name: String, population: number, startDate: string, fleeing: string, backgroundImageUrl: string, radarImageUrl: string, equivalentCity: City) {
+  constructor(name: String, population: number, populationDensity: number, startDate: string, fleeing: string, backgroundImageUrl: string, radarImageUrl: string, equivalentCity: City) {
     this._name = name;
     this._population = population;
+    this._populationDensity = populationDensity;
     this._startDate = startDate;
     this._fleeing = fleeing;
     this._backgroundImageUrl = backgroundImageUrl;
@@ -23,8 +25,8 @@ export class Camp {
     return this._name;
   }
 
-  get population(): number {
-    return this._population;
+  get populationDensity(): number {
+    return this._populationDensity;
   }
 
   get startDate(): string {
@@ -33,6 +35,10 @@ export class Camp {
 
   get fleeing(): string {
     return this._fleeing;
+  }
+
+  get population(): number {
+    return this._population;
   }
 
   get backgroundImageUrl(): string {

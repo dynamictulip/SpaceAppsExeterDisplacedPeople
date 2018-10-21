@@ -1,14 +1,19 @@
 <img class="background" [src]="selectedCamp?.backgroundImageUrl">
 <div class="parent">
   <div class="lefthand">
-    <app-selector [camps]="camps" (selected)="campSelected($event)"></app-selector>
+    <app-camp-selector [camps]="camps" (selected)="campSelected($event)"></app-camp-selector>
     <div class="jumbotron tagline">
-      <p class="lead">{{witty?.text}}</p>
+      <p class="lead">
+        This camp has a population of {{selectedCamp?.population}} with a density of {{selectedCamp?.populationDensity}}
+        ({{witty?.text}}),
+        the camp is the same size as {{selectedCamp?.equivalentCity?.name}} which has a population of
+        {{selectedCamp?.equivalentCity?.population}}
+      </p>
     </div>
   </div>
   <div class="righthand">
     <app-images
-      [image1Url]="selectedCamp?.backgroundImageUrl"
-      [image2Url]="selectedCamp?.equivalentCity.backgroundImageUrl"></app-images>
+      [image1Url]="selectedCamp?.radarImageUrl"
+      [image2Url]="selectedCamp?.equivalentCity?.radarImageUrl"></app-images>
   </div>
 </div>

@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Camp} from '../../models/camp';
 
 @Component({
-  selector: 'app-selector',
+  selector: 'app-camp-selector',
   templateUrl: './camp-selector.component.html',
   styleUrls: ['./camp-selector.component.css']
 })

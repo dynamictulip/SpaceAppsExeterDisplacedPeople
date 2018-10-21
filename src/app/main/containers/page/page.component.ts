@@ -21,11 +21,12 @@ export class PageComponent implements OnInit {
 
   ngOnInit() {
     this.camps = this.campDataService.getCamps();
+    this.campSelected('Dadaab');
   }
 
   campSelected($event: String) {
     this.selectedCamp = this.campDataService.getCamp($event);
-    this.wittyService.getWittyComparison(this.selectedCamp.population)
+    this.wittyService.getWittyComparison(this.selectedCamp.populationDensity)
       .subscribe((response: Wibject) => this.witty = response);
   }
 }
