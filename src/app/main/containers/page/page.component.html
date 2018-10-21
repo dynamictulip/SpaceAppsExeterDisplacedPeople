@@ -1,0 +1,23 @@
+<img class="background" [src]="selectedCamp?.backgroundImageUrl">
+<div class="parent">
+  <div class="lefthand">
+    <app-camp-selector [camps]="camps" (selected)="campSelected($event)"></app-camp-selector>
+    <div class="jumbotron tagline">
+      <p class="lead">
+        This camp has a population of {{selectedCamp?.population}} with a density of {{selectedCamp?.populationDensity}}
+        ({{witty?.text}}),
+        the camp is a similar size to {{selectedCamp?.equivalentCity?.name}} which has a population of
+        {{selectedCamp?.equivalentCity?.population}}
+      </p>
+    </div>
+    <iframe class="nightskyframe" [src]="this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedCamp.nightSkyImage)"></iframe>
+  </div>
+  <div class="righthand">
+    <app-images
+      [image1Url]="selectedCamp?.radarImageUrl"
+      [image1Caption]="selectedCamp?.name"
+      [image2Url]="selectedCamp?.equivalentCity?.radarImageUrl"
+      [image2Caption]="selectedCamp?.equivalentCity?.name"
+    ></app-images>
+  </div>
+</div>

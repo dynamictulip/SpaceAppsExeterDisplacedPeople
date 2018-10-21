@@ -1,0 +1,4 @@
+<span class="h1">Select a camp:
+  <select *ngIf="camps" (change)="emitSelected($event.target.value)" style="height: 10rem" class="form-control form-control-lg">
+  <option *ngFor="let camp of camps" [value]="camp.name">{{camp.name}}</option>
+</select></span>
