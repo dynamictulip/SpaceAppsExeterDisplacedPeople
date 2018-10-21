@@ -8,9 +8,10 @@ export class Camp {
   private _fleeing: string;
   private _backgroundImageUrl: string;
   private _radarImageUrl: string;
+  private _nightSkyImage: string;
   private _equivalentCity: City;
 
-  constructor(name: String, population: number, populationDensity: number, startDate: string, fleeing: string, backgroundImageUrl: string, radarImageUrl: string, equivalentCity: City) {
+  constructor(name: String, population: number, populationDensity: number, startDate: string, fleeing: string, backgroundImageUrl: string, radarImageUrl: string, nightSkyImage: string, equivalentCity: City) {
     this._name = name;
     this._population = population;
     this._populationDensity = populationDensity;
@@ -19,6 +20,7 @@ export class Camp {
     this._backgroundImageUrl = backgroundImageUrl;
     this._equivalentCity = equivalentCity;
     this._radarImageUrl = radarImageUrl;
+    this._nightSkyImage = nightSkyImage;
   }
 
   get name(): String {
@@ -51,5 +53,9 @@ export class Camp {
 
   get radarImageUrl(): string {
     return this._radarImageUrl;
+  }
+
+  get nightSkyImage(): string {
+    return this._nightSkyImage;
   }
 }

@@ -3,6 +3,7 @@ import {WittyComparisonService} from '../../service/witty-comparison/witty-compa
 import {CampDataService} from '../../service/camp-data/camp-data.service';
 import {Camp} from '../../models/camp';
 import {Wibject} from '../../models/wibject';
+import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-page',
@@ -16,7 +17,8 @@ export class PageComponent implements OnInit {
   selectedCamp: Camp;
 
   constructor(private wittyService: WittyComparisonService,
-              private campDataService: CampDataService) {
+              private campDataService: CampDataService,
+              public sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {

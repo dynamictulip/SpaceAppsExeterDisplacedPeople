@@ -6,10 +6,11 @@
       <p class="lead">
         This camp has a population of {{selectedCamp?.population}} with a density of {{selectedCamp?.populationDensity}}
         ({{witty?.text}}),
-        the camp is the same size as {{selectedCamp?.equivalentCity?.name}} which has a population of
+        the camp is a similar size to {{selectedCamp?.equivalentCity?.name}} which has a population of
         {{selectedCamp?.equivalentCity?.population}}
       </p>
     </div>
+    <iframe class="nightskyframe" [src]="this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedCamp.nightSkyImage)"></iframe>
   </div>
   <div class="righthand">
     <app-images
