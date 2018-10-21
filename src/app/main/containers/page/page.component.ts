@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {WittyComparisonService} from '../../service/witty-comparison/witty-comparison.service';
 import {CampDataService} from '../../service/camp-data/camp-data.service';
 import {Camp} from '../../models/camp';
-import {HttpResponse} from '@angular/common/http';
 import {Wibject} from '../../models/wibject';
 
 @Component({
@@ -14,6 +13,7 @@ export class PageComponent implements OnInit {
 
   witty: Wibject;
   camps: Camp[];
+  selectedCamp: Camp;
 
   constructor(private wittyService: WittyComparisonService,
               private campDataService: CampDataService) {
@@ -24,7 +24,8 @@ export class PageComponent implements OnInit {
   }
 
   campSelected($event: String) {
-    const camp: Camp = this.campDataService.getCamp($event);
-    this.wittyService.getWittyComparison(camp.population).subscribe((response: Wibject) => this.witty = response);
+    this.selectedCamp = this.campDataService.getCamp($event);
+    this.wittyService.getWittyComparison(this.selectedCamp.population)
+      .subscribe((response: Wibject) => this.witty = response);
   }
 }

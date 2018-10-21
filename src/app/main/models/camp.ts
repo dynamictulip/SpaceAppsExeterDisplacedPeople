@@ -5,16 +5,18 @@ export class Camp {
   private _population: number;
   private _startDate: string;
   private _fleeing: string;
-  private _imageUrl: string;
+  private _backgroundImageUrl: string;
+  private _radarImageUrl: string;
   private _equivalentCity: City;
 
-  constructor(name: String, population: number, startDate: string, fleeing: string, imageUrl: string, equivalentCity: City) {
+  constructor(name: String, population: number, startDate: string, fleeing: string, backgroundImageUrl: string, radarImageUrl: string, equivalentCity: City) {
     this._name = name;
     this._population = population;
     this._startDate = startDate;
     this._fleeing = fleeing;
-    this._imageUrl = imageUrl;
+    this._backgroundImageUrl = backgroundImageUrl;
     this._equivalentCity = equivalentCity;
+    this._radarImageUrl = radarImageUrl;
   }
 
   get name(): String {
@@ -33,11 +35,15 @@ export class Camp {
     return this._fleeing;
   }
 
-  get imageUrl(): string {
-    return this._imageUrl;
+  get backgroundImageUrl(): string {
+    return this._backgroundImageUrl;
   }
 
   get equivalentCity(): City {
     return this._equivalentCity;
+  }
+
+  get radarImageUrl(): string {
+    return this._radarImageUrl;
   }
 }

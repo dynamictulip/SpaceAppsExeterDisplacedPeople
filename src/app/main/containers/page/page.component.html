@@ -1,3 +1,14 @@
-<app-selector [camps]="camps" (selected)="campSelected($event)"></app-selector>
-{{witty?.text}}
-<app-images></app-images>
+<img class="background" [src]="selectedCamp?.backgroundImageUrl">
+<div class="parent">
+  <div class="lefthand">
+    <app-selector [camps]="camps" (selected)="campSelected($event)"></app-selector>
+    <div class="jumbotron tagline">
+      <p class="lead">{{witty?.text}}</p>
+    </div>
+  </div>
+  <div class="righthand">
+    <app-images
+      [image1Url]="selectedCamp?.backgroundImageUrl"
+      [image2Url]="selectedCamp?.equivalentCity.backgroundImageUrl"></app-images>
+  </div>
+</div>
