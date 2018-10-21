@@ -16,9 +16,9 @@ export class CampDataService {
     const kutupahlongBackgroundImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcb876a5bbf242e8cb3d642/7cc718bdb3d8a1d839d91a674c9067c8/image.png';
 
     const dadaabRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
-    const kakumaRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const kakumaRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcc4b6822070a266ea519e6/87917a2663de66b938c9ce0ed7ae7445/ezgif.com-add-text.gif';
     const bidibidiRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
-    const zaatarRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
+    const zaatarRadarImage = 'https://trello-attachments.s3.amazonaws.com/5bcaff352a54ed589cae19a2/5bcc4b6822070a266ea519e6/a47102d816b5aa7489919f66520528a5/ezgif.com-add-text-2.gif';
     const kutupahlongRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
 
     const plymouthRadarImage = 'https://crisp.nus.edu.sg/~research/tutorial/sar.gif';
