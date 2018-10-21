@@ -39,11 +39,11 @@ export class CampDataService {
     const weston: City = new City('Plymouth', 234982, westonRadarImage);
     const birmingham: City = new City('Plymouth', 234982, birminghamRadarImage);
 
-    this.camps.push(new Camp('Dadaab', 253000, 0.1, '1991', 'Somalia', dadaabBackgroundImage, dadaabRadarImage, dadaabNightSkyImage, plymouth));
-    this.camps.push(new Camp('Kakuma', 190000, 0.8, '1991', 'Somalia', kakumaBackgroundImage, kakumaRadarImage, kakumaNightSkyImage, bournemouth));
-    this.camps.push(new Camp('Bidibidi', 272000, 0.4, '1991', 'Somalia', bidibidiBackgroundImage, bidibidiRadarImage, bidibidiNightSkyImage, bradford));
-    this.camps.push(new Camp('Zaatar', 79000, 0.8, '1991', 'Somalia', zaatarBackgroundImage, zaatarRadarImage, zaatarNightSkyImage, weston));
-    this.camps.push(new Camp('Kutupahlong', 970000, 0.6, '1991', 'Somalia', kutupahlongBackgroundImage, kutupahlongRadarImage, kutupahlongNightSkyImage, birmingham));
+    this.camps.push(new Camp('Dadaab', 253000, 4700, '1991', 'Somalia', dadaabBackgroundImage, dadaabRadarImage, dadaabNightSkyImage, plymouth));
+    this.camps.push(new Camp('Kakuma', 190000, 6333, '1991', 'Somalia', kakumaBackgroundImage, kakumaRadarImage, kakumaNightSkyImage, bournemouth));
+    this.camps.push(new Camp('Bidibidi', 272000, 1183, '1991', 'Somalia', bidibidiBackgroundImage, bidibidiRadarImage, bidibidiNightSkyImage, bradford));
+    this.camps.push(new Camp('Zaatar', 79000, 15800, '1991', 'Somalia', zaatarBackgroundImage, zaatarRadarImage, zaatarNightSkyImage, weston));
+    this.camps.push(new Camp('Kutupahlong', 970000, 46338, '1991', 'Somalia', kutupahlongBackgroundImage, kutupahlongRadarImage, kutupahlongNightSkyImage, birmingham));
   }
 
   getCamps(): Camp[] {
